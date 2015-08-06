@@ -1,3 +1,6 @@
+---
+output: html_document
+---
 P1 - Statistics: The Science of Decisions
 ========================================================
 #### *Louis Pienaar*
@@ -12,17 +15,29 @@ P1 - Statistics: The Science of Decisions
 ### Question 2: Hypothesis
 
 The stroop effect theorem implies that when comparing congruent vs incongruent time, that the incongruent time is more than the congruent time. From the problem statement and the answers given in question three and four, it is clear that there could be strong evidence to support this statement. 
+
+The data is gathered from 24 subjects. The population variables are unknown (population mean and standard deviation)
+
+The hypotheiss test is designed to infer the difference in task reading times for teh entire population based ona sample of 24 subjects.
+
 * The most reasonable null hypothesis would be that having the ink color and word be different (incongruent) have no effect on the time it takes to name the ink colors. 
 * The most reasonable alternative hypothesis would be that by having the ink color and word be different (incongruent) would result in an increased in the time it takes to name the ink colors (compared to the time when the ink color and word does not differ)
 
+
 $H_0: \mu_d \leq 0$  
 $H_A: \mu_d > 0$ 
+
+Each subject is given the congruent test and then the incongruent test, hence the sample is a set of paired data points.
+
+As stated the test is to see if the congruent times are more (and not just different), hence we will be using a one-tailed test.
 
 To test this hypothesis we should use a one-tailed dependent *t*-test for paired samples:
 
 $t = \frac{\overline{X}_D}{s_D/\sqrt{n}}$
 
 Where $\overline{X}_D$ is the calculated difference between the incongruent and congruent results for each respondent and $s_D$ is the standard deviation of these differences.
+
+The population variance is not known, hence we will use Student's T-Test. The subjects are given two treatments each, hence we can use the dependent paired sample test as this test is stronger (compared to independant unpaired samples).
 
 ### Question 3: Descriptive Statistics
 
